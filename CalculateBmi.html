@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CalculateBmi.css">
+    <title>CalculateBmi</title>
+</head>
+<body>
+    <div class="contianer">
+        <header>
+            <div>
+                <p id="header_caption">محاسبه آنلاین شاخص توده بدنی</p>
+            </div>
+            <div id="logo-contianer">
+                <img id="image_logo" src="image/bmi-logo.jpg" alt="">
+            </div>
+
+        </header>
+        <form id="frm_bmi" action="">
+            <label for="height_value">قد ( به سانتی متر)</label>
+            <br>
+            <input id="in_height" type="number" placeholder="قد" required min="1" max="240">
+            <br>
+            <br>
+            <label for="weight_value">وزن ( به کیلوگرم)</label>
+            <br>
+            <input id="in_weigth" type="number" placeholder="وزن" required min="1" max="200" >
+            <br><br>
+            <div id="btn_bmi" onclick="calculateBMI()">محاسبه توده بدنی</div>
+        </form>
+        <br><br>
+        <div id="result-contianer">
+            <p class="result"> توده بدنی شما  </p>
+            <span id="result" class="result">00.0</span>
+            <br>
+            <img id="image_cover" src="image/cover.jpg" alt="BMI-COVER">
+        </div>
+    </div>
+    
+</body>
+<script src="CalculateBmi.js"></script>
+</html>
